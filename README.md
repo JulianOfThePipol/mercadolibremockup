@@ -1,2 +1,2 @@
 # MercadoLibreMockUp
-Un mockUp con listado de productos, busqueda e item Realizado para Devlights
+Un mockUp con listado de productos, busqueda e item realizado para Devlights
