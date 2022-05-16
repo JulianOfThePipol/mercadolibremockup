@@ -1,13 +1,74 @@
+@font-face {
+  font-family: PokemonFont;
+  src: url(./assets//ProximaNovaFont/ProximaNovaFont.otf);
+}
+
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+} /* Este snippet de código, en lugar de agregarle los paddings a tu box, toma a border box como el tamaño máximo y agrega el padding y los bordes dentro de ese tamaño. Ayuda a eliminar incosistencias de tamaños y ubicación*/
+
+/* Opciones personalizadas de estilo*/
+:root {
+  --fw-reg: 150; /* Peso de la fuente regular. (cuan anchas son las letras)*/
+  --fw-bold: 900; /* Peso de la fuente Bold o negrita. */
+  /* El esquema de colores, es mejor usar variables, por si se decide cambiar el esquema solo hay que cambiarlo acá y no a traves del sitio. Personalmente prefiero hsl/hsla para formato de colores. */
+ /* El esquema de colores está basado en los esquemas mas usados a traves de la serie pokemon, en la cual esta basada el sitio, está la paleta completa, para experimentar, tendria que descartar luego los que no se usen */
+ --clr-ml:  hsl(55, 100%, 67%);
+ --clr-light: hsl(0, 0%, 98%); /* Color claro */
+  --clr-dark: hsl(240, 5%, 11%); /* Color oscuro */
+  --clr-redLight: hsl(0, 100%, 50%); /* Color principal claro */
+  --clr-redDark: hsl(0, 100%, 40%); /* Color principal oscuro */
+  --clr-gold: hsl(52, 100%, 50%); /* Color secundario claro */
+  --clr-goldDark: hsl(52, 66%, 42%); /* Color secundario oscuro */
+  --clr-greenLight: hsl(112, 71%, 44%); /* Color terciario claro */
+  --clr-greenDark: hsl(152, 97%, 23%); /* Color terciario oscuro*/
+  --clr-blue: hsl(233, 57%, 51%); /* azul :) */
+
+  /*Estos son las tipografias para pantalla chica. Quedan mejor si se achica un poco la letra para mejorar el responsiveness. Hay que ver si lo usamos */
+  --fs-h1: 3rem;
+  --fs-h2: 2.25rem;
+  --fs-h2b: 1.75rem;
+  --fs-h3: 1.25rem;
+  --fs-body: 1rem;
+  --bs: 0.25em 0.25em 0.75em rgba(0, 0, 0, 0.726); /* Variable general para box shadow.*/
+}
+
+@media (min-width: 800px) {
+  :root {
+    --fs-h1: 4.5rem;
+    --fs-h2: 2.5rem;
+    --fs-h2b: 1.75rem;
+    --fs-h3: 1.5rem;
+    --fs-body: 1.25rem;
+  }
+} /* Variables para tipografias de pantallas grandes*/
+
+/* General */
+
+html {
+  scroll-behavior: smooth;
+} /*Si es necesario scrollear, esta linea permite un scroll mas suave, una forma muy facil de resolverlo.*/
+
+
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+  padding: 0;
+  font-family: "Proxima Nova",
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+.hidden {
+  display: none;
+}
+

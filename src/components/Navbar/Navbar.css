@@ -1,0 +1,13 @@
+
+.Navbar{
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 3em;
+    background-color: var(--clr-ml);
+}
+
+.Navbar--search input{
+    width: 60vw;
+}

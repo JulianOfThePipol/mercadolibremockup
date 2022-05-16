@@ -1,5 +1,6 @@
 import { useRef } from "react"
 import { useNavigate } from "react-router-dom";
+import "./Navbar.css"
 
 export default function Navbar() {
   const searchRef = useRef();
@@ -11,14 +12,11 @@ export default function Navbar() {
 
   return (
     <header className="Navbar">
-      <div className="Navbar--container">
         <img src="/favicon.svg" className="Navbar--img" alt="Logo" />
         <div className="Navbar--search">
           <input id="search" name="search" ref={searchRef} placeholder="Nunca dejes de buscar" className="Navbar--search--input" />
-          <button className="Navbar--search--button" onClick={handleSearchClick}>
-          </button>
+          <button className="Navbar--search--button" onClick={handleSearchClick}/>
         </div>
-      </div>
     </header>
   )
 }
