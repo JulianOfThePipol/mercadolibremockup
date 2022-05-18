@@ -1,7 +1,20 @@
 @font-face {
-  font-family: PokemonFont;
+  font-family: ProximaNova;
   src: url(./assets//ProximaNovaFont/ProximaNovaFont.otf);
 }
+@font-face {
+  font-family: ProximaNovaLight;
+  src: url(./assets//ProximaNovaFont/proximanova-light.woff2);
+}
+@font-face {
+  font-family: ProximaNovaRegular;
+  src: url(./assets//ProximaNovaFont/proximanova-regular.woff2);
+}
+@font-face {
+  font-family: ProximaNovaSemibold;
+  src: url(./assets//ProximaNovaFont/proximanova-semibold.woff2);
+}
+
 
 
 *,
@@ -16,8 +29,9 @@
   --fw-bold: 900; /* Peso de la fuente Bold o negrita. */
   /* El esquema de colores, es mejor usar variables, por si se decide cambiar el esquema solo hay que cambiarlo acá y no a traves del sitio. Personalmente prefiero hsl/hsla para formato de colores. */
  /* El esquema de colores está basado en los esquemas mas usados a traves de la serie pokemon, en la cual esta basada el sitio, está la paleta completa, para experimentar, tendria que descartar luego los que no se usen */
- --clr-ml:  hsl(55, 100%, 67%);
- --clr-light: hsl(0, 0%, 98%); /* Color claro */
+  --clr-ml:  hsl(55, 100%, 67%);
+  --clr-greyBg: hsl(0, 0%, 93%);
+  --clr-light: hsl(0, 0%, 98%); /* Color claro */
   --clr-dark: hsl(240, 5%, 11%); /* Color oscuro */
   --clr-redLight: hsl(0, 100%, 50%); /* Color principal claro */
   --clr-redDark: hsl(0, 100%, 40%); /* Color principal oscuro */
@@ -72,3 +86,7 @@ code {
   display: none;
 }
 
+a {
+  all: none;
+  text-decoration: none;
+}
