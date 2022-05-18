@@ -1,0 +1,15 @@
+.List {
+    background-color: var(--clr-greyBg);
+}
+
+.List--container{
+    display: flex;
+    flex-direction: column;
+    width: 80vw;
+    align-items: flex-start;
+    margin-inline: auto;
+}
+
+.List--container a {
+    all: none;
+}
