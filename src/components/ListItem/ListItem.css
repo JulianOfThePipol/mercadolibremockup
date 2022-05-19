@@ -3,7 +3,7 @@
     display: grid;
     width: 80vw;
     height: 25vh;
-    margin-block:1.5px ;
+    border: 1.5px solid var(--clr-greyBg);
     color: #333;
     font-size: 20px;
     font-weight: 300;
@@ -11,20 +11,33 @@
     grid-template-areas:
       "img title state"
       "img price state";
-    grid-template-columns: 25vw 40vw 15vw;
+    grid-template-columns: 20vw 40vw 15vw;
     background-color: var(--clr-light);
     font-family: ProximaNovaLight;
     text-decoration: none;
+    padding-inline:1em;
+    gap: 1em;
+    transition: all 0.5s ease-in-out;
+    }
+
+.ListItem:hover {
+    transform: scale(1.05);
+    box-shadow: 2px rgb(0 0 0 / 20%);
+    z-index: 100;
+
 
 }
 
 .ListItem--img{
-    max-width: 25vw;
+    max-width: 20vw;
     height: 25vh;
     grid-area: img;
     justify-self: center;
     align-self: center;
     padding-block: 1em;
+
+  
+    border-radius: 30px;
 
 }
 
@@ -35,7 +48,6 @@
     text-overflow: ellipsis;
     overflow: hidden;
     word-break: break-word;
-    height: 1fr;
     white-space: nowrap;
     margin-right: 1em;
  
@@ -54,6 +66,7 @@
     min-width: max-content;
     align-self: center;
     padding-right: 1em;
+
 }
 
 @media  (max-width:800px) {

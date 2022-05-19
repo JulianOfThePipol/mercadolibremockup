@@ -4,10 +4,34 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 3em;
+    height: 3.5em;
     background-color: var(--clr-ml);
+    all: none;
+    font-family: ProximaNovaLight;
 }
 
-.Navbar--search input{
+.Navbar--img{
+    height: 3.5em;
+    margin-right: 2em;
+    cursor: pointer;
+}
+
+.Navbar--search--input{
     width: 60vw;
+    height: 2.5em;
+    border: none;
+    box-shadow: 0 1px 2px 0 rgb(0 0 0 / 20%);
+    padding: 0.5em;
+    border: 0 rgba(0,0,0,.2);
+    color: #333;
+}
+
+.Navbar--search--button{
+    border: none;
+    height: 2.5em;
+    box-shadow: 0 1px 2px 0 rgb(0 0 0 / 20%);
+    cursor: pointer;
+}
+.Navbar--search--button img {
+    width: 80%;
 }

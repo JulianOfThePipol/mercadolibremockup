@@ -90,3 +90,7 @@ a {
   all: none;
   text-decoration: none;
 }
+
+input::selection {
+  background-color: white;
+}

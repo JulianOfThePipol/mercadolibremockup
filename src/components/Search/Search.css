@@ -1,0 +1,37 @@
+.Search--paginacion {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--clr-greyBg);
+    font-family: ProximaNovaLight;
+    font-size: 16px;
+    color: rgba(0,0,0,.45);
+    height: 6em;
+}
+.Search--paginacion button {
+    all: none;
+    border: none;
+    font-family: ProximaNovaRegular;
+    margin: 1em;
+    font-size: 16px;
+}
+
+.Search--current{
+    background-color: rgba(0,0,0,.04);
+    padding:0.5em 0.9em;
+}
+
+.Search--arrows{
+    color: #3483fa;
+    line-height: 1;
+    cursor: pointer;
+    -webkit-tap-highlight-color: transparent;
+    transition: background-color .25s ease;
+    padding: 9px 16px;
+   
+}
+
+.Search--arrows:hover{
+    background-color: rgba(0,0,0,.1);
+
+}

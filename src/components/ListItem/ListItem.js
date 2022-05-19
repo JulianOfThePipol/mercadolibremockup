@@ -13,7 +13,7 @@ export default function ListItem(props) {
             alt="thumbnail"
           />
             <main className="ListItem--main--title">{title}</main>
-            <header className="ListItem--main--price">$ {price.toLocaleString('es', {useGrouping:true})}</header>
+            <header className="ListItem--main--price">$ {price?.toLocaleString('de', {useGrouping:true})}</header>
         <div className="ListItem--stateName">
           {state_name}
         </div>

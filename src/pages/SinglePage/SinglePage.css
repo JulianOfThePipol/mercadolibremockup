@@ -1,0 +1,111 @@
+.SinglePage {
+    font-family: ProximaNovaLight;
+    background-color: var(--clr-greyBg);
+    padding-bottom: 1em;
+    min-height: 94vh;
+}
+
+
+
+.SinglePage--header{
+    display: flex;
+    align-items: center;
+    gap: 0.5em;
+    font-size: 14px;
+    color: #3483fa;
+    padding: 1em;
+    height: 3.5em;
+}
+
+.SinglePage--header p:first-of-type{
+    display: none;
+}
+
+.SinglePage--header p{
+    color: #666;
+}
+
+.SinglePage--header{
+    display: flex;
+    margin-inline: 2em;
+
+}
+
+.SinglePage--main{
+    display: flex;
+    gap: 1em;
+    background-color: var(--clr-light);
+    justify-content: center;
+    margin-inline: 2em;
+    box-shadow: 0 1px 2px 0 rgb(0 0 0 / 20%);
+    border-radius: 5px;
+
+
+}
+
+.SinglePage--img{
+    border-radius: 15px;
+    align-self: center;
+
+}
+
+
+
+.SinglePage--Sidebar {
+    width: 30vw;
+    display: flex;
+    flex-direction: column;
+    margin: 1em;
+
+}
+
+.SinglePage--Sidebar--condicion{
+    margin-bottom: 0;
+}
+
+.SinglePage--Sidebar--titulo{
+    margin-block: 0;
+}
+
+.SinglePage--Sidebar--precio{
+    font-size: 36px;
+    font-family: ProximaNovaLight;
+    font-weight: 100;
+}
+
+.SinglePage--buy{
+    all: none;
+    background-color: #3483fa;
+    border-color: transparent;
+    color: #fff;
+    font-family: ProximaNovaRegular;
+    font-weight: 600;
+    border-radius: 6px;
+    cursor: pointer;
+    line-height: 48px;
+    font-size: 16px;
+    transition: all 200ms ease-in-out;
+}
+
+.SinglePage--buy:hover{
+    background-color: #2d6dcc;
+}
+
+
+.SinglePage--Section {
+    width: 75vw;
+    display: flex;
+    flex-direction: column;
+    margin: 1em;
+}
+
+.SinglePage--mainTitle{
+    font-size: 30px
+}
+
+.SinglePage--descripcion{
+     color:#666;
+     font-size: 22px;
+     overflow: hidden;
+     text-overflow: ellipsis;
+}

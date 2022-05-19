@@ -1,6 +1,7 @@
 
 import { useParams } from "react-router-dom";
 import { useFetch } from "../../hooks";
+import "./SinglePage.css"
 
 export default function View() {
   const params = useParams();
@@ -18,24 +19,24 @@ export default function View() {
     <div className="SinglePage">
       <header className="SinglePage--header">
           {categories?.path_from_root.map(category => (
-            <div className="SinglePage--route">
-              {category.name} {'>'}
-            </div>
+            <>
+              <p className="SinglePage--arrow">{'>'}</p>{category.name} 
+            </>
           ))}
       </header>
       <main className="SinglePage--main">
-        <section>
-          <img src={data.pictures[0].url} alt="Imagen de producto" />
+        <section className="SinglePage--Section">
+          <img src={data.pictures[0].url} alt="Imagen de producto" className="SinglePage--img"/>
           <section>
-            <h3>Descripcion del producto</h3>
-            <p>{description.plain_text}</p>
+            <h3 className="SinglePage--mainTitle">Descripcion del producto</h3>
+            <p className="SinglePage--descripcion">{description.plain_text}</p>
           </section>
         </section>
-        <sidebar>
-          {data.condition === "new" ? "Nuevo" : "Usado"}
-          {data.title}
-          $ {data.price}
-          <button>COMPRAR</button>
+        <sidebar className="SinglePage--Sidebar">
+          <p className="SinglePage--Sidebar--condicion">{data.condition === "new" ? "Nuevo" : "Usado"}</p>
+          <h3 className="SinglePage--Sidebar--titulo">{data.title}</h3>
+          <h3 className="SinglePage--Sidebar--precio">$ {data.price.toLocaleString('de', {useGrouping:true})}</h3>
+          <button className="SinglePage--buy">Comprar ahora</button>
         </sidebar>
       </main>
     </div>
